@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="wrapper.css" rel="stylesheet">
+    <link href="Header_style.css" rel="stylesheet">
+    <link href="register.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- https://boxicons.com/usage -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <span>Email: info@example.com</span>
+                <span>Phone: +94 75 456-7890</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <form action="register.php" method="POST">
+            <h1>Register</h1>
+            <div class="input-box">
+                <i class='bx bx-user-circle'></i>
+                <input type="text" name="email" placeholder="email" required>
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-lock-alt' id="togglePassword"></i>
+                <input type="password" name="password" placeholder="password" required id="password">
+            </div>
+            <button type="submit" class="btn" name="btn">Sign Up</button>
+            <div class="login-link">
+                <p>If you have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
